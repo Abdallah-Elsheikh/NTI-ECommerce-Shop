@@ -9,9 +9,7 @@ The project was generated using [Angular CLI](https://github.com/angular/angular
 ## 🎥 Project Demo
 
 
-
-https://github.com/user-attachments/assets/081f9421-f9e6-47e0-ae1e-c1d4667ea408
-
+https://github.com/user-attachments/assets/bdc23fcb-cd8e-4836-b4c8-f3877e3d4a6e
 
 
 ---
