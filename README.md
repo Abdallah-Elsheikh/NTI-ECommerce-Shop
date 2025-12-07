@@ -8,14 +8,11 @@ The project was generated using [Angular CLI](https://github.com/angular/angular
 
 ## 🎥 Project Demo
 
-<div align="center">
-  <video src="src/assets/demo.mp4" width="100%" controls autoplay muted></video>
-  <br>
-  <p>
-    <em>If the video does not play above, click the link below:</em><br>
-    <strong><a href="src/assets/demo.mp4">▶️ Watch Demo Video (mp4)</a></strong>
-  </p>
-</div>
+
+
+https://github.com/user-attachments/assets/081f9421-f9e6-47e0-ae1e-c1d4667ea408
+
+
 
 ---
 
