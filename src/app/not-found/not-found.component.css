@@ -1,0 +1,20 @@
+.not-found-container {
+  text-align: center;
+  padding: 100px 20px;
+}
+.not-found-container h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+.not-found-container h2 {
+  font-size: 2rem;
+}
+.not-found-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}

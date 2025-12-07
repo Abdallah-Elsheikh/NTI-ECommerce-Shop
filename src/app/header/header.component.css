@@ -1,0 +1,46 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  position: relative; 
+}
+
+.active-link {
+  color: #27ae60; 
+  font-weight: bold;
+}
+
+.cart-icon {
+  font-size: 24px;
+}
+
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #e74c3c; 
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}

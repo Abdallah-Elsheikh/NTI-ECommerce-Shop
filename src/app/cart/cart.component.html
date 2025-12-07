@@ -1,0 +1,52 @@
+<div class="cart-container">
+  <h1>Cart</h1>
+
+  <div *ngIf="(cartItems$ | async) as items; else emptyCart">
+    <div *ngIf="items.length > 0; else emptyCart">
+      
+      <div class="cart-header">
+        <div class="header-desc">Description</div>
+        <div class="header-qty">Quantity</div>
+        <div class="header-remove">Remove</div>
+        <div class="header-price">Price</div>
+      </div>
+
+      <div class="cart-item" *ngFor="let item of items">
+        <div class="item-desc">
+          <img [src]="item.thumbnail" alt="{{ item.title }}">
+          <div>
+            <p class="item-title">{{ item.title }}</p>
+            <p class="item-code">Product Code: {{ item.id }}</p>
+          </div>
+        </div>
+        <div class="item-qty">
+          <button (click)="increase(item.id)">+</button>
+          
+          <span>{{ item.quantity! }}</span>
+          <button (click)="decrease(item.id)">-</button>
+        </div>
+        <div class="item-remove">
+          <button class="remove-btn" (click)="remove(item.id)">×</button>
+        </div>
+        <div class="item-price">
+          
+          {{ (item.price * item.quantity!) | currency:'EGP ' }}
+        </div>
+      </div>
+
+      <div class="cart-total">
+        <h3>Total</h3>
+        <h3>{{ cartService.getTotalPrice() | currency:'EGP ' }}</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <ng-template #emptyCart>
+    <div class="empty-cart-message">
+      <h2>Your cart is empty.</h2>
+      <p>Looks like you haven't added anything to your cart yet.</p>
+    </div>
+  </ng-template>
+
+</div>
